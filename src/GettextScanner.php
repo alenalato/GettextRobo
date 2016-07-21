@@ -136,6 +136,7 @@ class TaskGettextScanner extends BaseTask implements TaskInterface
     {
         switch (pathinfo($file, PATHINFO_EXTENSION)) {
             case 'php':
+            case 'inc':
                 return "{$prefix}PhpCode{$suffix}";
 
             case 'js':
